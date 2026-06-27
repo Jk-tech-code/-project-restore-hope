@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Restore Hope (PRH) - Restoring Hope, Transforming Lives</title>
+  <meta name="description" content="Project Restore Hope provides education, daily meals, and hope to nearly 800 children at Glorious Group of Schools in Mukuru, Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Project Restore Hope (PRH) - Restoring Hope, Transforming Lives">
+  <meta property="og:description" content="Project Restore Hope provides education, daily meals, and hope to nearly 800 children at Glorious Group of Schools in Mukuru, Kenya.">
+  <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:url" content="https://projectrestorehope.com/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project Restore Hope (PRH) - Restoring Hope, Transforming Lives">
+  <meta name="twitter:description" content="Project Restore Hope provides education, daily meals, and hope to nearly 800 children at Glorious Group of Schools in Mukuru, Kenya.">
+  <link rel="canonical" href="https://projectrestorehope.com/">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .featured-grid { grid-template-columns: repeat(4, 1fr) !important; }
+    @media (max-width: 992px) { .featured-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+    @media (max-width: 576px) { .featured-grid { grid-template-columns: 1fr !important; } }
+    video { max-width: 100%; height: auto; }
+    .sponsor-image img { object-fit: cover; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NON-PROFIT ORGANIZATION", 
+    "name": "Project Restore Hope",
+    "url": "https://projectrestorehope.com",
+    "description": "Project Restore Hope provides education, daily meals, and hope to nearly 800 children at Glorious Group of Schools in Mukuru, Kenya.",
+    "foundingDate": "2006",
+    "areaServed": "Mukuru, Nairobi, Kenya"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">PRH</span>
+        <span>Project Restore Hope</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="impact.html">Impact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="students.html">Students</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-cta">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-slideshow" id="heroSlideshow" aria-hidden="true">
+      <div class="hero-slide active" style="background-image:url('images/kids-enjoying-food-5.jpg');"></div>
+      <div class="hero-slide" style="background-image:url('images/glorious-educational-trip-5.jpg');"></div>
+      <div class="hero-slide" style="background-image:url('images/feeding-program-1.jpg');"></div>
+      <div class="hero-slide" style="background-image:url('images/bigrelief-mukuru-5.jpg');"></div>
+      <div class="hero-slide" style="background-image:url('images/computer-classes-3.jpg');"></div>
+    </div>
+    <noscript>
+      <div style="position:absolute;inset:0;background-image:url('images/kids-enjoying-food-5.jpg');background-size:cover;background-position:center;z-index:0;"></div>
+    </noscript>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge hero-reveal" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="vertical-align:middle;margin-right:6px;"><polygon points="12 2 22 12 12 22 2 12"/></svg> Serving Mukuru Since 2006</div>
+        <h1 class="hero-reveal">Education, Meals &amp; Hope for Children in Kenya</h1>
+        <p class="hero-subtitle hero-reveal">Every day, we provide two nutritious meals and quality education to nearly 800 children at Glorious Group of Schools in Mukuru, transforming lives through opportunity.</p>
+        <div class="hero-buttons hero-reveal">
+          <a href="donate.html" class="btn btn-primary btn-lg">Donate Now</a>
+          <button class="btn-hero-video" id="heroVideoBtn" aria-label="Watch our story">
+            <span class="play-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+            Watch Our Story
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="container">
+        <div class="hero-stats-inner">
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-target="800">800+</div>
+            <div class="hero-stat-label">Students Supported</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-target="20">20+</div>
+            <div class="hero-stat-label">Years of Service</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-target="70">70</div>
+            <div class="hero-stat-label">Orphans Cared For</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-target="2">2</div>
+            <div class="hero-stat-label">Meals Served Daily</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Watch our story video">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close video"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <video controls preload="none" playsinline>
+        <source src="images/glorious-educational-trip-1.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- ========== HOW WE HELP ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">How We Help</h2>
+      <p class="section-subtitle fade-up delay-1">Every day, we provide education, nutrition, healthcare, and community support to nearly 800 children and their families in Mukuru.</p>
+      <div class="program-grid stagger-children">
+        <div class="program-card">
+          <div class="program-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+          <h3>Quality Education</h3>
+          <p>Glorious Group of Schools provides pre-primary, primary, and secondary education to nearly 800 students, ranked #1 in Nairobi in 2019.</p>
+          <a href="schools.html" class="program-link">Learn More &rarr;</a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+          <h3>Daily Nutrition</h3>
+          <p>We serve two nutritious meals every school day to every student and staff member, ensuring no child tries to learn on an empty stomach.</p>
+          <a href="programs.html" class="program-link">Learn More &rarr;</a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 2.5-4 2.5-6.5A5.5 5.5 0 0 0 16 2c-1.8 0-3.4.8-4.5 2.1A5.5 5.5 0 0 0 2 7.5C2 10 3 12.5 4.5 14L12 22l7-7z"/></svg></div>
+          <h3>Healthcare Access</h3>
+          <p>Through health awareness programs, clinic support, and partnerships, we help students and families access essential medical care.</p>
+          <a href="healthcare.html" class="program-link">Learn More &rarr;</a>
+        </div>
+        <div class="program-card">
+          <div class="program-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Community Outreach</h3>
+          <p>We support orphans, vulnerable children, and families through relief supplies, spiritual guidance, and long-term development programs.</p>
+          <a href="mukuru.html" class="program-link">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== IMPACT STATISTICS ========== -->
+  <section class="section impact-section">
+    <div class="container">
+      <h2 class="section-title fade-up" style="color:#fff;">Our Impact by the Numbers</h2>
+      <p class="section-subtitle fade-up delay-1" style="color:rgba(255,255,255,0.8);">For over 20 years, we have been transforming lives in Mukuru through sustainable, community-driven programs.</p>
+      <div class="impact-grid stagger-children">
+        <div class="impact-card">
+          <span class="impact-number" data-target="800">800</span>
+          <span class="impact-label">Students Educated Daily</span>
+          <span class="impact-desc">From 60 students in 2006 to nearly 800 today</span>
+        </div>
+        <div class="impact-card">
+          <span class="impact-number" data-target="70">70</span>
+          <span class="impact-label">Orphans &amp; Vulnerable Children</span>
+          <span class="impact-desc">Receiving full support including shelter, food, and school fees</span>
+        </div>
+        <div class="impact-card">
+          <span class="impact-number" data-target="360000">360K</span>
+          <span class="impact-label">Meals Served Annually</span>
+          <span class="impact-desc">Two nutritious meals per day, every school day of the year</span>
+        </div>
+        <div class="impact-card">
+          <span class="impact-number" data-target="221">#1</span>
+          <span class="impact-label">Rank in Nairobi (2019)</span>
+          <span class="impact-desc">Glorious Group of Schools ranked first out of 221 schools</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPONSOR A STUDENT ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="sponsor-layout fade-up">
+        <div class="sponsor-content">
+          <span class="sponsor-badge">Sponsor a Child</span>
+          <h2>Give a Child the Gift of Education</h2>
+          <p>For just $35 per month, you can provide a child in Mukuru with quality education, daily meals, school supplies, and hope for a brighter future. Your sponsorship transforms not just a life, but an entire community.</p>
+          <div class="sponsor-highlights">
+            <div class="sponsor-highlight">
+              <span class="sh-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Full school fees covered</span>
+            </div>
+            <div class="sponsor-highlight">
+              <span class="sh-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Two meals served every school day</span>
+            </div>
+            <div class="sponsor-highlight">
+              <span class="sh-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>School uniforms &amp; supplies included</span>
+            </div>
+            <div class="sponsor-highlight">
+              <span class="sh-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Regular progress updates &amp; photos</span>
+            </div>
+          </div>
+          <div class="sponsor-cta">
+            <a href="students.html" class="btn btn-primary btn-lg">Sponsor a Student</a>
+            <a href="donate.html" class="btn btn-outline btn-lg">Make a Donation</a>
+          </div>
+        </div>
+        <div class="sponsor-image">
+          <img src="images/kids-enjoying-food-8.jpg" alt="Students at Glorious Group of Schools" loading="lazy">
+          <div class="sponsor-image-card">
+            <span class="sic-number">70+</span>
+            <span class="sic-label">Orphans awaiting sponsors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OUR JOURNEY ========== -->
+  <section class="section journey-section">
+    <div class="container">
+      <h2 class="section-title fade-up">Our Journey Since 2006</h2>
+      <p class="section-subtitle fade-up delay-1">From humble beginnings with 60 students to a top-ranked school serving nearly 800 children.</p>
+      <div class="journey-grid stagger-children">
+        <div class="journey-card">
+          <div class="journey-year">2006</div>
+          <h3>School Founded</h3>
+          <p>Glorious Group of Schools opens its doors with just 60 students in Mukuru, providing free education to children who otherwise could not afford it.</p>
+        </div>
+        <div class="journey-card">
+          <div class="journey-year">2012</div>
+          <h3>Feeding Program Launched</h3>
+          <p>PRH begins providing daily meals to students, ensuring that hunger is no longer a barrier to learning.</p>
+        </div>
+        <div class="journey-card">
+          <div class="journey-year">2019</div>
+          <h3>#1 School in Nairobi</h3>
+          <p>Glorious Group of Schools is ranked the top school out of 221 in Nairobi, proving that excellence thrives in Mukuru.</p>
+        </div>
+        <div class="journey-card">
+          <div class="journey-year">2026</div>
+          <h3>800 Students &amp; Growing</h3>
+          <p>Today we serve nearly 800 students, support 70 orphans, employ 50 staff, and continue expanding our facilities and programs.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="transformation.html" class="btn btn-primary">View Full Timeline</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VIDEO STORIES ========== -->
+  <section class="section video-section">
+    <div class="container">
+      <h2 class="section-title fade-up">Stories of Transformation</h2>
+      <p class="section-subtitle fade-up delay-1">Watch how your support is changing lives in Mukuru.</p>
+      <div class="video-showcase fade-up delay-2">
+        <div class="video-main">
+          <video controls preload="metadata" poster="images/glorious-educational-trip-5.jpg">
+            <source src="images/glorious-educational-trip-1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-description">
+          <h3>Educational Trips: Expanding Horizons</h3>
+          <p>Thanks to your support, students at Glorious Group of Schools experience educational trips that broaden their perspectives and inspire them to dream big. These experiences are often the first time many children have traveled outside Mukuru.</p>
+          <a href="videos.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:#fff;margin-top:16px;">Watch More Videos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED GALLERY ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Featured Gallery</h2>
+      <p class="section-subtitle fade-up delay-1">A glimpse into life at Glorious Group of Schools and the community we serve.</p>
+      <div class="gallery-grid featured-grid fade-up delay-2">
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Feeding Program">
+          <div class="gallery-img-wrapper" style="height:200px;">
+            <img src="images/feeding-program-1.jpg" alt="Feeding Program" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Feeding Program</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Educational Trip">
+          <div class="gallery-img-wrapper" style="height:260px;">
+            <img src="images/glorious-educational-trip-5.jpg" alt="Educational Trip" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Educational Trip</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Graduation Ceremony">
+          <div class="gallery-img-wrapper" style="height:200px;">
+            <img src="images/certificate-graduation-1.jpg" alt="Graduation Ceremony" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Graduation</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="National Exams">
+          <div class="gallery-img-wrapper" style="height:260px;">
+            <img src="images/national-exams-1.jpg" alt="National Exams" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">National Exams</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="School Construction">
+          <div class="gallery-img-wrapper" style="height:260px;">
+            <img src="images/construction-photos-10.jpg" alt="School Construction" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Construction</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Student Life">
+          <div class="gallery-img-wrapper" style="height:200px;">
+            <img src="images/kids-enjoying-food-5.jpg" alt="Student Life" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Student Life</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Community Outreach">
+          <div class="gallery-img-wrapper" style="height:200px;">
+            <img src="images/bigrelief-mukuru-5.jpg" alt="Community Outreach" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Community</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Modern Facilities">
+          <div class="gallery-img-wrapper" style="height:260px;">
+            <img src="images/modern-office-1.jpg" alt="Modern Facilities" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Facilities</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Computer Lab">
+          <div class="gallery-img-wrapper" style="height:260px;">
+            <img src="images/computer-classes-3.jpg" alt="Computer Lab" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Computer Lab</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Solar Panels">
+          <div class="gallery-img-wrapper" style="height:200px;">
+            <img src="images/solar-panels-3.jpg" alt="Solar Panels" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Solar Panels</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Construction Progress">
+          <div class="gallery-img-wrapper" style="height:200px;">
+            <img src="images/construction-photos-50.jpg" alt="Construction Progress" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Progress</div>
+          </div>
+        </div>
+        <div class="gallery-item" tabindex="0" role="button" aria-label="Educational Trip">
+          <div class="gallery-img-wrapper" style="height:260px;">
+            <img src="images/glorious-educational-trip-10.jpg" alt="Educational Trip" loading="lazy">
+            <div class="overlay" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-caption">Trip</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonial-section">
+    <div class="container">
+      <h2 class="section-title fade-up">Voices of Hope</h2>
+      <p class="section-subtitle fade-up delay-1">Hear from those whose lives have been transformed through your support.</p>
+      <div class="testimonial-grid stagger-children">
+        <blockquote class="testimonial-card">
+          <div class="testimonial-text">
+            <p>"Education has given my children a future I could only dream of. PRH has been a blessing to our family and our entire community."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="ta-avatar" aria-hidden="true">MJ</div>
+            <div>
+              <cite>Mr. Jared</cite>
+              <span>Parent</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-text">
+            <p>"Being named the top school in Nairobi showed us that with determination and support, anything is possible. PRH made this dream a reality."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="ta-avatar" aria-hidden="true">MO</div>
+            <div>
+              <cite>Mr. Ochieng</cite>
+              <span>Head Teacher</span>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <div class="testimonial-text">
+            <p>"The daily meals mean I can focus on my studies instead of worrying about hunger. I want to become a doctor to help my community."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="ta-avatar" aria-hidden="true">MA</div>
+            <div>
+              <cite>Mary A.</cite>
+              <span>Student</span>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SUCCESS STORIES ========== -->
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="section-title fade-up">Success Stories</h2>
+      <p class="section-subtitle fade-up delay-1">Real lives transformed through the power of education, nutrition, and community support.</p>
+      <div class="story-grid stagger-children">
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="images/glorious-educational-trip-10.jpg" alt="Student on educational trip" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <div class="story-role">Student</div>
+            <h3>From Mukuru to Medical School</h3>
+            <p>Through 12 years of sponsorship, Grace graduated top of her class and is now pursuing her dream of becoming a doctor to serve her community.</p>
+            <a href="students.html" class="btn btn-sm btn-primary">Read More</a>
+          </div>
+        </article>
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="images/feeding-program-1.jpg" alt="Students receiving meals" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <div class="story-role">Impact</div>
+            <h3>Feeding Program Feeds 800+ Daily</h3>
+            <p>What started with 60 students has grown to nearly 800 children receiving two nutritious meals every school day, removing hunger as a barrier to learning.</p>
+            <a href="programs.html" class="btn btn-sm btn-primary">Learn More</a>
+          </div>
+        </article>
+        <article class="story-card">
+          <div class="story-card-img">
+            <img src="images/computer-classes-3.jpg" alt="Students in computer lab" loading="lazy">
+          </div>
+          <div class="story-card-body">
+            <div class="story-role">Achievement</div>
+            <h3>#1 School in Nairobi</h3>
+            <p>Glorious Group of Schools ranked first out of 221 schools in Nairobi, proving that excellence can thrive anywhere with dedication and support.</p>
+            <a href="schools.html" class="btn btn-sm btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARTNERS & SPONSORS ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Our Partners &amp; Sponsors</h2>
+      <p class="section-subtitle fade-up delay-1">Together with our generous partners, we are transforming lives and building brighter futures for the children of Mukuru.</p>
+      <div class="partner-grid stagger-children">
+        <div class="partner-item"><span>Partner Organization</span></div>
+        <div class="partner-item"><span>Community Sponsor</span></div>
+        <div class="partner-item"><span>Education Foundation</span></div>
+        <div class="partner-item"><span>Global Outreach</span></div>
+        <div class="partner-item"><span>Hope Alliance</span></div>
+        <div class="partner-item"><span>Child Fund</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Together We Can Make a Difference</h2>
+      <p>The children of Mukuru deserve access to quality education, nutritious meals, and a safe environment where they can learn and grow. Your support makes this possible.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="donate.html" class="btn btn-primary btn-lg">Donate Today</a>
+        <a href="vision.html" class="btn btn-secondary btn-lg">Our Future Vision</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cta fade-up">
+        <h3>Transform a Life Today</h3>
+        <p>Your donation provides education, meals, and hope to a child in Mukuru, Kenya.</p>
+        <a href="donate.html" class="btn btn-primary btn-lg">Donate Now</a>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">PRH</span>
+            Project Restore Hope
+          </div>
+          <p>Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2006.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schools.html">Glorious Schools</a></li>
+            <li><a href="transformation.html">Transformation</a></li>
+            <li><a href="impact.html">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="students.html">Student Profiles</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="mukuru.html">Mukuru</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="partners.html">Partners &amp; Sponsors</a></li>
+            <li><a href="transparency.html">Financial Transparency</a></li>
+            <li><a href="reports.html">Annual Reports</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-subscribe">
+        <h4>Subscribe to Our Newsletter</h4>
+        <p>Get monthly updates from Mukuru delivered to your inbox.</p>
+        <form action="#" method="POST" class="newsletter-form">
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Project Restore Hope (PRH). All rights reserved.</span>
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" class="social-link" aria-label="Facebook" target="_blank" rel="noopener" title="Follow us on Facebook"><img src="images/facebook-logo-icon.jpg" alt="Facebook" loading="lazy"></a>
+          <a href="https://instagram.com/yourpage" class="social-link" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram"><img src="images/instagram-icon.jpg" alt="Instagram" loading="lazy"></a>
+          <a href="https://youtube.com/@yourchannel" class="social-link" aria-label="YouTube" target="_blank" rel="noopener" title="Subscribe to our YouTube channel"><img src="images/youtube-logo.png" alt="YouTube" loading="lazy"></a>
+          <a href="https://x.com/yourpage" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener" title="Follow us on X"><img src="images/twitter-icon.png" alt="X (Twitter)" loading="lazy"></a>
+          <a href="https://linkedin.com/company/yourpage" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" title="Follow us on LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn" loading="lazy"></a>
+          <a href="https://tiktok.com/@yourpage" class="social-link" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok"><img src="images/tiktok-icon.jpg" alt="TikTok" loading="lazy"></a>
+          <a href="https://wa.me/254700000000" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener" title="Contact us on WhatsApp"><img src="images/whatsapp-icon.jpg" alt="WhatsApp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-donate-btn">
+    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+  </div>
+
+  <script src="js/media-catalog.js"></script>
+  <script src="js/config.js"></script><script src="js/script.js"></script>
+</body>
+</html>

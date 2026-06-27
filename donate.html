@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Project Restore Hope</title>
+  <meta name="description" content="Support Project Restore Hope's mission to provide education, meals, and hope to children in Mukuru, Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Donate - Project Restore Hope">
+  <meta property="og:description" content="Support Project Restore Hope's mission to provide education, meals, and hope to children in Mukuru, Kenya.">
+  <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:url" content="https://projectrestorehope.com/donate.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Donate - Project Restore Hope">
+  <meta name="twitter:description" content="Support Project Restore Hope's mission to provide education, meals, and hope to children in Mukuru, Kenya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">PRH</span>
+        <span>Project Restore Hope</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+            <nav class="nav" aria-label="Main navigation">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="impact.html">Impact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="students.html">Students</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-cta">Donate</a>
+      
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Help Us Empower the Future of Our Children</h1>
+      <p>Your generosity brings education, daily meals, and hope to the children of Mukuru, Kenya.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split-layout">
+        <div>
+          <div class="form-card">
+            <h2 style="font-size:1.6rem;color:var(--primary-dark);margin-bottom:24px;">Make a Donation</h2>
+            <form action="http://localhost:5000/api/donate/create-payment-intent" method="POST" id="donation-form">
+              <div class="donation-amounts">
+                <div class="donation-amount" data-amount="10">$10</div>
+                <div class="donation-amount" data-amount="25">$25</div>
+                <div class="donation-amount" data-amount="50">$50</div>
+                <div class="donation-amount" data-amount="100">$100</div>
+                <div class="donation-amount" data-amount="500">$500</div>
+                <div class="donation-amount custom" data-amount="custom">Custom</div>
+              </div>
+              <div id="custom-amount-container" style="display:none;margin-bottom:16px;">
+                <input type="number" name="custom_amount" id="custom-amount" placeholder="Enter amount $" min="1" step="0.01" style="width:100%;padding:12px;border:2px solid var(--border);border-radius:var(--radius);font-size:1.1rem;">
+              </div>
+              <input type="hidden" name="amount" id="donation-amount" value="">
+              <div style="margin-bottom:20px;">
+                <div style="display:flex;gap:8px;margin-bottom:16px;">
+                  <span class="frequency-option active" data-frequency="one-time" style="padding:8px 16px;border:2px solid var(--secondary);border-radius:var(--radius);font-weight:700;background:var(--secondary);color:var(--primary-dark);cursor:pointer;">One-Time</span>
+                  <span class="frequency-option" data-frequency="monthly" style="padding:8px 16px;border:2px solid var(--border);border-radius:var(--radius);font-weight:600;color:var(--text-light);cursor:pointer;">Monthly</span>
+                </div>
+                <input type="hidden" name="frequency" id="donation-frequency" value="one-time">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width:75%;" data-width="75%"></div>
+                </div>
+                <p style="font-size:0.85rem;color:var(--text-muted);">$42,500 raised of $60,000 goal for new building</p>
+              </div>
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="Your email address" required>
+              </div>
+              <div class="form-group">
+                <label>Message (Optional)</label>
+                <textarea name="note" placeholder="Share a note with your donation..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Donate Now</button>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="alert alert-success"><strong>Education & Daily Meals:</strong> Your support provides two meals a day and quality education for children in Mukuru.</div>
+          <div class="alert alert-info"><strong>Building Fund:</strong> Help us replace the current dilapidated building with a safe, modern four-story facility.</div>
+          <div class="alert alert-warning"><strong>Tax-Deductible:</strong> Project Restore Hope provides donation receipts for all contributions.</div>
+
+          <div class="form-card" style="margin-top:24px;">
+            <h3 style="color:var(--primary-dark);margin-bottom:16px;">Your Support Helps Provide</h3>
+            <ul style="color:var(--text-light);line-height:2.2;list-style:disc;padding-left:20px;">
+              <li>Education for 800+ students</li>
+              <li>Two daily meals for students and staff</li>
+              <li>School supplies and uniforms</li>
+              <li>Teacher salaries and support</li>
+              <li>Building improvements and maintenance</li>
+              <li>Technology and computer training</li>
+              <li>Future development projects</li>
+            </ul>
+          </div>
+
+          <div class="form-card" style="margin-top:24px;">
+            <h3 style="color:var(--primary-dark);margin-bottom:8px;">Bank Transfer</h3>
+            <p style="color:var(--text-light);font-size:0.9rem;">Email us at <strong>info@projectrestorehope.com</strong> for direct bank transfer details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-white);">
+    <div class="container">
+      <h2 class="section-title fade-in">Why Your Support Matters</h2>
+      <p class="page-intro fade-in delay-1">This has not been an easy task and we continue to face challenges every day. The current school and church reside in a very small dilapidated building constructed of corrugated tin, mud, and wood. We cannot do this alone and would greatly appreciate your help.</p>
+      <div class="stats-row fade-in delay-2" style="margin-top:40px;">
+        <div class="stat">
+          <div class="stat-number">800+</div>
+          <div class="stat-label">Students Served</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Meals Daily</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">20</div>
+          <div class="stat-label">Years of Impact</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1</div>
+          <div class="stat-label">New Building Needed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Every Gift Makes a Difference</h2>
+      <p>Help us empower the future of our children. Donate today and be part of transforming lives in Mukuru.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="#donation-form" class="btn btn-primary btn-lg">Donate Now</a>
+        <a href="vision.html" class="btn btn-secondary btn-lg">Our Building Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">PRH</span>
+            Project Restore Hope
+          </div>
+          <p>Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2007.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schools.html">Glorious Schools</a></li>
+            <li><a href="transformation.html">Transformation</a></li>
+            <li><a href="impact.html">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="students.html">Student Profiles</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="mukuru.html">Mukuru</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="partners.html">Partners & Sponsors</a></li>
+            <li><a href="transparency.html">Financial Transparency</a></li>
+            <li><a href="reports.html">Annual Reports</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Project Restore Hope (PRH). All rights reserved.</span>
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" class="social-link" aria-label="Facebook" target="_blank" rel="noopener" title="Follow us on Facebook"><img src="images/facebook logo icon.jpg" alt="Facebook" loading="lazy"></a>
+          <a href="https://instagram.com/yourpage" class="social-link" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram"><img src="images/instagram icon.jpg" alt="Instagram" loading="lazy"></a>
+          <a href="https://youtube.com/@yourchannel" class="social-link" aria-label="YouTube" target="_blank" rel="noopener" title="Subscribe to our YouTube channel"><img src="images/youtube logo.png" alt="YouTube" loading="lazy"></a>
+          <a href="https://x.com/yourpage" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener" title="Follow us on X"><img src="images/twitter icon.png" alt="X (Twitter)" loading="lazy"></a>
+          <a href="https://linkedin.com/company/yourpage" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" title="Follow us on LinkedIn"><img src="images/linkedin icon.png" alt="LinkedIn" loading="lazy"></a>
+          <a href="https://tiktok.com/@yourpage" class="social-link" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok"><img src="images/tiktok icon.jpg" alt="TikTok" loading="lazy"></a>
+          <a href="https://wa.me/254700000000" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener" title="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt="WhatsApp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-donate-btn">
+    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+  </div>
+
+  <script src="js/media-catalog.js"></script>
+  <script src="js/config.js"></script><script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Partners and sponsors supporting Project Restore Hope in Mukuru, Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Partners & Sponsors - Project Restore Hope">
+  <meta property="og:description" content="Partners and sponsors supporting Project Restore Hope in Mukuru, Kenya.">
+  <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:url" content="https://projectrestorehope.com/partners.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Partners & Sponsors - Project Restore Hope">
+  <meta name="twitter:description" content="Partners and sponsors supporting Project Restore Hope in Mukuru, Kenya.">
+  <title>Partners & Sponsors - Project Restore Hope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">PRH</span>
+        <span>Project Restore Hope</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+            <nav class="nav" aria-label="Main navigation">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="impact.html">Impact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="students.html">Students</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-cta">Donate</a>
+      
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Partners & Sponsors</h1>
+      <p>We are grateful for the organizations, churches, and individuals who partner with us to restore hope in Mukuru.</p>
+    </div>
+  </section>
+
+  <section class="page-intro">
+    <div class="container">
+      <p>Our partners make everything possible. Through their generous support, we are able to provide education, meals, medical care, and hope to the children and families of Mukuru. Partnership is at the heart of our mission, and we treasure every relationship that helps us build a brighter future.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Our Partners</h2>
+      <div class="partner-grid">
+        <div class="partner-logo">
+          <h3>Global Church Partners</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Community Foundation</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Education Alliance</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Health Partners International</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Local Nairobi Churches</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>US Supporting Churches</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Corporate Sponsors</h3>
+        </div>
+        <div class="partner-logo">
+          <h3>Individual Benefactors</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-white);">
+    <div class="container">
+      <div class="form-card">
+        <h2 class="section-title">Partner With Us</h2>
+        <p>Interested in becoming a partner? Fill out the form below and our team will reach out to discuss how we can work together.</p>
+        <form action="http://localhost:5000/api/partner" method="POST">
+          <div class="form-group">
+            <label for="organizationName">Organization Name</label>
+            <input type="text" id="organizationName" name="organizationName" required>
+          </div>
+          <div class="form-group">
+            <label for="contactPerson">Contact Person</label>
+            <input type="text" id="contactPerson" name="contactPerson" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="interest">Partnership Interest</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select an option</option>
+              <option value="church-partner">Church Partner</option>
+              <option value="corporate-sponsor">Corporate Sponsor</option>
+              <option value="foundation-grant">Foundation Grant</option>
+              <option value="inkind-support">In-Kind Support</option>
+              <option value="media-partner">Media Partner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Become a Partner Today</h2>
+      <p>Join us in transforming lives and restoring hope in Mukuru, Kenya.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">PRH</span>
+            Project Restore Hope
+          </div>
+          <p>Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2007.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schools.html">Glorious Schools</a></li>
+            <li><a href="transformation.html">Transformation</a></li>
+            <li><a href="impact.html">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="students.html">Student Profiles</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="mukuru.html">Mukuru</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="partners.html">Partners & Sponsors</a></li>
+            <li><a href="transparency.html">Financial Transparency</a></li>
+            <li><a href="reports.html">Annual Reports</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Project Restore Hope (PRH). All rights reserved.</span>
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" class="social-link" aria-label="Facebook" target="_blank" rel="noopener" title="Follow us on Facebook"><img src="images/facebook logo icon.jpg" alt="Facebook" loading="lazy"></a>
+          <a href="https://instagram.com/yourpage" class="social-link" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram"><img src="images/instagram icon.jpg" alt="Instagram" loading="lazy"></a>
+          <a href="https://youtube.com/@yourchannel" class="social-link" aria-label="YouTube" target="_blank" rel="noopener" title="Subscribe to our YouTube channel"><img src="images/youtube logo.png" alt="YouTube" loading="lazy"></a>
+          <a href="https://x.com/yourpage" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener" title="Follow us on X"><img src="images/twitter icon.png" alt="X (Twitter)" loading="lazy"></a>
+          <a href="https://linkedin.com/company/yourpage" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" title="Follow us on LinkedIn"><img src="images/linkedin icon.png" alt="LinkedIn" loading="lazy"></a>
+          <a href="https://tiktok.com/@yourpage" class="social-link" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok"><img src="images/tiktok icon.jpg" alt="TikTok" loading="lazy"></a>
+          <a href="https://wa.me/254700000000" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener" title="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt="WhatsApp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-donate-btn"><a href="donate.html" class="btn btn-primary">Donate Now</a></div>
+  <script src="js/media-catalog.js"></script>
+  <script src="js/config.js"></script><script src="js/script.js"></script>
+</body>
+</html>

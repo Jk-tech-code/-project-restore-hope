@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Photo Gallery - Project Restore Hope | School Transformation</title>
+  <meta name="description" content="Complete photo gallery of Glorious Group of Schools' transformation in Mukuru, Kenya. Over 400 photos across construction, academics, community, and student life categories.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Complete Photo Gallery - Project Restore Hope | School Transformation">
+  <meta property="og:description" content="Complete photo gallery of Glorious Group of Schools' transformation in Mukuru, Kenya. Over 400 photos across construction, academics, community, and student life categories.">
+  <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:url" content="https://projectrestorehope.com/gallery.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Complete Photo Gallery - Project Restore Hope | School Transformation">
+  <meta name="twitter:description" content="Complete photo gallery of Glorious Group of Schools' transformation in Mukuru, Kenya. Over 400 photos across construction, academics, community, and student life categories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .gallery-tabs { display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px; }
+    .gallery-tab { padding:10px 20px;border-radius:var(--radius-full);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all var(--transition);background:var(--bg);color:var(--text);border:1px solid var(--border); }
+    .gallery-tab:hover { border-color:var(--primary);color:var(--primary); }
+    .gallery-tab.active { background:var(--primary);color:#fff;border-color:var(--primary); }
+    .gallery-section { scroll-margin-top:100px; }
+    @media (max-width:768px) { .gallery-tabs { gap:4px; } .gallery-tab { padding:8px 14px;font-size:0.8rem; } }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">PRH</span>
+        <span>Project Restore Hope</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Main navigation">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="impact.html">Impact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="students.html">Students</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-cta">Donate</a>
+      
+      </nav>
+    </div>
+  </header>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="Gallery image">
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Complete Photo Gallery</h1>
+      <p>Explore over 450 photographs documenting the full transformation journey of Glorious Group of Schools — from humble beginnings to a top-ranked institution. Every image captures a moment in our story.</p>
+    </div>
+  </section>
+
+  <!-- Category Tabs -->
+  <section class="section" style="background:var(--bg-white);padding-bottom:0;">
+    <div class="container">
+      <div class="gallery-tabs fade-in" id="gallery-tabs"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Sections -->
+  <section class="section" style="background:var(--bg-white);padding-top:40px;">
+    <div class="container">
+
+      <!-- Historical Photos -->
+      <div id="section-historical" class="gallery-section">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Historical Photos</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">The early days of Mukuru and the humble beginnings of the school — 100 historical photographs.</p>
+        <div id="gallery-historical" data-gallery-category="Historical Photos" data-items-per-page="24"></div>
+      </div>
+
+      <!-- Construction -->
+      <div id="section-construction" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Construction Photos</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">The building of modern facilities — from foundation to completion. 86 construction progress photographs.</p>
+        <div id="gallery-construction" data-gallery-category="Construction" data-items-per-page="24"></div>
+      </div>
+
+      <!-- Modern Facilities -->
+      <div id="section-modern" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Modern Facilities</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">Computer labs, modern offices, solar panels, and locker facilities — showcasing today's school.</p>
+        <div id="gallery-modern" data-gallery-category="Modern Facilities" data-items-per-page="24"></div>
+      </div>
+
+      <!-- Feeding Program -->
+      <div id="section-feeding" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Feeding Program</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">Daily meals that ensure no child learns on an empty stomach. 57 photographs of the feeding program.</p>
+        <div id="gallery-feeding" data-gallery-category="Feeding Program" data-items-per-page="24"></div>
+      </div>
+
+      <!-- Educational Trips -->
+      <div id="section-trips" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Educational Trips</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">Students explore beyond Mukuru — 16 photographs from educational excursions.</p>
+        <div id="gallery-trips" data-gallery-category="Educational Trips" data-items-per-page="16"></div>
+      </div>
+
+      <!-- Exams & Academics -->
+      <div id="section-exams" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Exams & Academics</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">National exams, internal assessments, and graduation ceremonies — 24 academic photographs.</p>
+        <div id="gallery-exams" data-gallery-category="Exams & Academics" data-items-per-page="24"></div>
+      </div>
+
+      <!-- Community & Relief -->
+      <div id="section-community" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Community & Relief Programs</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">Supporting the wider Mukuru community — 28 photographs of relief, church, and community activities.</p>
+        <div id="gallery-community" data-gallery-category="Community & Relief" data-items-per-page="24"></div>
+      </div>
+
+      <!-- General Photos -->
+      <div id="section-general" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">General Gallery</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">Additional moments captured — 51 photographs of school life and events.</p>
+        <div id="gallery-general" data-gallery-category="General Photos" data-items-per-page="24"></div>
+      </div>
+
+      <!-- Student Life -->
+      <div id="section-students" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Student Life</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">The children of Glorious Group of Schools — photographs capturing their spirit and joy.</p>
+        <div id="gallery-students" data-gallery-category="Student Life" data-items-per-page="17"></div>
+      </div>
+
+      <!-- Student Profiles -->
+      <div id="section-profiles" class="gallery-section" style="margin-top:60px;">
+        <h2 class="section-title" style="text-align:left;font-size:1.8rem;margin-bottom:8px;">Student Profiles</h2>
+        <p class="section-subtitle" style="text-align:left;margin:0 0 24px;font-size:0.95rem;">Individual portraits of the orphans and vulnerable children supported by Project Restore Hope.</p>
+        <div id="gallery-profiles" data-gallery-category="Student Profiles" data-items-per-page="24"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Every Picture Tells a Story</h2>
+      <p>These photographs represent thousands of lives transformed. Your support makes these moments possible.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="donate.html" class="btn btn-primary btn-lg">Support the Mission</a>
+        <a href="transformation.html" class="btn btn-secondary btn-lg">See the Full Timeline</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">PRH</span>
+            Project Restore Hope
+          </div>
+          <p>Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2006.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schools.html">Glorious Schools</a></li>
+            <li><a href="transformation.html">Transformation</a></li>
+            <li><a href="impact.html">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Media</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="students.html">Student Profiles</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="mukuru.html">Mukuru</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="partners.html">Partners & Sponsors</a></li>
+            <li><a href="transparency.html">Financial Transparency</a></li>
+            <li><a href="reports.html">Annual Reports</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Project Restore Hope (PRH). All rights reserved.</span>
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" class="social-link" aria-label="Facebook" target="_blank" rel="noopener" title="Follow us on Facebook"><img src="images/facebook logo icon.jpg" alt="Facebook" loading="lazy"></a>
+          <a href="https://instagram.com/yourpage" class="social-link" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram"><img src="images/instagram icon.jpg" alt="Instagram" loading="lazy"></a>
+          <a href="https://youtube.com/@yourchannel" class="social-link" aria-label="YouTube" target="_blank" rel="noopener" title="Subscribe to our YouTube channel"><img src="images/youtube logo.png" alt="YouTube" loading="lazy"></a>
+          <a href="https://x.com/yourpage" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener" title="Follow us on X"><img src="images/twitter icon.png" alt="X (Twitter)" loading="lazy"></a>
+          <a href="https://linkedin.com/company/yourpage" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" title="Follow us on LinkedIn"><img src="images/linkedin icon.png" alt="LinkedIn" loading="lazy"></a>
+          <a href="https://tiktok.com/@yourpage" class="social-link" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok"><img src="images/tiktok icon.jpg" alt="TikTok" loading="lazy"></a>
+          <a href="https://wa.me/254700000000" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener" title="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt="WhatsApp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-donate-btn">
+    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+  </div>
+
+  <script src="js/media-catalog.js"></script>
+  <script src="js/config.js"></script><script src="js/script.js"></script>
+  <script>
+    // Generate gallery category tabs
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabsContainer = document.getElementById('gallery-tabs');
+      if (tabsContainer && typeof MEDIA_CATALOG !== 'undefined') {
+        const sections = [
+          { id: 'historical', label: 'Historical Photos', count: MEDIA_CATALOG['Historical Photos']?.length || 0 },
+          { id: 'construction', label: 'Construction', count: MEDIA_CATALOG['Construction']?.length || 0 },
+          { id: 'modern', label: 'Modern Facilities', count: MEDIA_CATALOG['Modern Facilities']?.length || 0 },
+          { id: 'feeding', label: 'Feeding Program', count: MEDIA_CATALOG['Feeding Program']?.length || 0 },
+          { id: 'trips', label: 'Educational Trips', count: MEDIA_CATALOG['Educational Trips']?.length || 0 },
+          { id: 'exams', label: 'Exams & Academics', count: MEDIA_CATALOG['Exams & Academics']?.length || 0 },
+          { id: 'community', label: 'Community & Relief', count: MEDIA_CATALOG['Community & Relief']?.length || 0 },
+          { id: 'general', label: 'General Photos', count: MEDIA_CATALOG['General Photos']?.length || 0 },
+          { id: 'students', label: 'Student Life', count: MEDIA_CATALOG['Student Life']?.length || 0 },
+          { id: 'profiles', label: 'Student Profiles', count: MEDIA_CATALOG['Student Profiles']?.length || 0 },
+        ];
+        let html = '';
+        sections.forEach(s => {
+          html += `<a href="#section-${s.id}" class="gallery-tab">${s.label} (${s.count})</a>`;
+        });
+        tabsContainer.innerHTML = html;
+      }
+    });
+  </script>
+</body>
+</html>

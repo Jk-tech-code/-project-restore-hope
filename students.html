@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profiles - Project Restore Hope | Glorious Academy Orphans</title>
+  <meta name="description" content="Meet the 57 orphans and vulnerable children supported by Project Restore Hope at Glorious Academy in Mukuru, Kenya. Each child has a unique story of hope and transformation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Student Profiles - Project Restore Hope">
+  <meta property="og:description" content="Meet the 57 orphans and vulnerable children supported by Project Restore Hope at Glorious Academy.">
+  <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:url" content="https://projectrestorehope.com/students.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Student Profiles - Project Restore Hope">
+  <meta name="twitter:description" content="Meet the 57 orphans and vulnerable children supported by Project Restore Hope.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .students-hero {
+      padding: 160px 0 80px;
+      background: linear-gradient(135deg, #0F2D55, #1E4D8C);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .students-hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .students-hero p {
+      font-size: 1.15rem;
+      opacity: 0.85;
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .students-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .student-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(30, 77, 140, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #E8E8E3;
+    }
+    .student-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(30, 77, 140, 0.15);
+    }
+    .student-card .img-wrap {
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      background: #FAFAF7;
+      position: relative;
+    }
+    .student-card .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .student-card:hover .img-wrap img {
+      transform: scale(1.05);
+    }
+    .student-card .img-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1E4D8C, #3A7BC8);
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 900;
+      font-family: 'Poppins', sans-serif;
+    }
+    .student-card .card-body {
+      padding: 16px 16px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .student-card .card-body h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0F2D55;
+      margin-bottom: 2px;
+    }
+    .student-card .card-body .age {
+      font-size: 0.85rem;
+      color: #F4B400;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .student-card .card-body p {
+      font-size: 0.85rem;
+      color: #555;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .student-card .card-body .sponsor-badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 14px;
+      background: rgba(244, 180, 0, 0.12);
+      color: #0F2D55;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    @media (max-width: 1100px) {
+      .students-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .students-hero { padding: 120px 0 60px; }
+      .students-hero h1 { font-size: 2rem; }
+      .students-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 0 16px; }
+      .student-card .img-wrap { height: 220px; }
+    }
+    @media (max-width: 480px) {
+      .students-grid { grid-template-columns: 1fr; }
+      .student-card .img-wrap { height: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">PRH</span>
+        <span>Project Restore Hope</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Main navigation">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="impact.html">Impact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="students.html">Students</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-cta">Donate</a>
+      
+      </nav>
+    </div>
+  </header>
+
+  <section class="students-hero">
+    <div class="container">
+      <h1>Our Students</h1>
+      <p>Meet the 57 orphaned and vulnerable children of Glorious Academy. Each has a story of resilience, hope, and transformation. Your sponsorship can change a life.</p>
+    </div>
+  </section>
+
+  <section style="padding:60px 0 80px;background:#FAFAF7;">
+    <div class="students-grid">
+
+      <!-- 1 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Asha Siraj, 14.png" alt="Asha Siraj" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AS</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Asha Siraj</h3>
+          <div class="age">Age 14</div>
+          <p>Asha recently enrolled and picks up course material very quickly. A bright student with a promising future.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Brigda Ndanu, 14.png" alt="Brigda Ndanu" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>BN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Brigda Ndanu</h3>
+          <div class="age">Age 14</div>
+          <p>Brigda enrolled in 2020. She is a dedicated student who works hard in her studies.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Daniel Wanyonyi, 17.png" alt="Daniel Wanyonyi" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DW</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Daniel Wanyonyi</h3>
+          <div class="age">Age 17</div>
+          <p>Daniel was found on the streets of Reuben and enrolled in 2020. He is well mannered and passionate about his education.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Alexander Ngui, 16.png" alt="Alexander Ngui" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Alexander Ngui</h3>
+          <div class="age">Age 16</div>
+          <p>Alexander enrolled when he was 14. He is very bright and shows a lot of promise in his academics.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/David Mwendwa, 16.png" alt="David Mwendwa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>David Mwendwa</h3>
+          <div class="age">Age 16</div>
+          <p>David was staying with a distant relative who neglected him. Accepted into Glorious Academy for an education, a home, and a better tomorrow.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Delight Awuor, 15.png" alt="Delight Awour" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DA</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Delight Awour</h3>
+          <div class="age">Age 15</div>
+          <p>Delight's parents died in a tragic road accident. She was picked up by a good samaritan and enrolled into our school.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Immanuel Saramba, 17.png" alt="Immanuel Saramba" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>IS</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Immanuel Saramba</h3>
+          <div class="age">Age 17</div>
+          <p>Immanuel was picked up from the streets of Mukuru after the demise of his parents. He is now thriving at our school.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Faith Sarah Mary, 14.png" alt="Faith Sarah Mary" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>FS</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Faith Sarah Mary</h3>
+          <div class="age">Age 14</div>
+          <p>Faith was left alone after her parents were killed in a tragic road accident. Accepted by Pastor Boniface Mangeti into Glorious Academy.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Geoffrey Muthoka, 16.png" alt="Geoffrey Muthoka" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>GM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Geoffrey Muthoka</h3>
+          <div class="age">Age 16</div>
+          <p>Geoffrey became an orphan when his parents succumbed to blood pressure-related problems. He is energetic, young, and vibrant.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Hannah Mueni, 16.png" alt="Hannah Mueni" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>HM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Hannah Mueni</h3>
+          <div class="age">Age 16</div>
+          <p>Hannah enrolled a year ago after complications with her parents. She is resilient and dedicated to her education.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Kevin Mwendwa, 16.png" alt="Kevin Mwendwa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>KM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Kevin Mwendwa</h3>
+          <div class="age">Age 16</div>
+          <p>Kevin enrolled last year. He is very ambitious and vibrant, with a bright future ahead of him.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Patrick Mohammed, 16.png" alt="Patrick Mohammed" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>PM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Patrick Mohammed</h3>
+          <div class="age">Age 16</div>
+          <p>Patrick was staying with his disabled parents who could hardly afford to feed him. He came to school seeking help.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Rose Zaitun Mmbone, 14.png" alt="Rose Zaitun Mmbone" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>RZ</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Rose Zaitun Mmbone</h3>
+          <div class="age">Age 14</div>
+          <p>Rose was recently enrolled. She had been staying with her aunt after the death of her parents.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Shidado Barongo, 15.png" alt="Shidado Barongo" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>SB</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Shidado Barongo</h3>
+          <div class="age">Age 15</div>
+          <p>Shidado enrolled recently. Her mother was dealing with drug problems and unable to care for her.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/yvonne ndanu, 15.jpeg" alt="Yvonne Ndanu" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>YN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Yvonne Ndanu</h3>
+          <div class="age">Age 15</div>
+          <p>Yvonne has undergone many hardships and trauma but is healthy and doing well. She loves to swim, and her favorite subjects are mathematics and business.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Samuel Amani, 5.jpg" alt="Samuel Amani" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>SA</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Samuel Amani</h3>
+          <div class="age">Age 5</div>
+          <p>Samuel is an adorable young boy who loves to read and draw. His favorite food is french fries.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Abberlyn Kailyn, 2.png" alt="Abberlyn Kailyn" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AK</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Abberlyn Kailyn</h3>
+          <div class="age">Age 2</div>
+          <p>We found Abberlyn crying near the school. We attempted to find her parents with the help of local government but had no success.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Abigail Amanda, 7.png" alt="Abigail Amanda" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AA</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Abigail Amanda</h3>
+          <div class="age">Age 7</div>
+          <p>Abigail was found on the streets of Mukuru and was taken in by a good samaritan, but could no longer support her, so she came to us.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 19 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Alex Barasa, 14.png" alt="Alex Barasa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AB</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Alex Barasa</h3>
+          <div class="age">Age 14</div>
+          <p>Alex was abandoned by his parents and no one was willing to help him. He came to us seeking a future.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 20 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Amina Suleiman.png" alt="Amina Suleiman" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AS</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Amina Suleiman</h3>
+          <div class="age">Age 5</div>
+          <p>Amina was admitted in 2020. Her house was broken into and her parents ended up tragically killed. Someone dropped her off at our doorstep.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 21 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Angel Nafula, 4.png" alt="Angel Nafula" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Angel Nafula</h3>
+          <div class="age">Age 4</div>
+          <p>Angel's mother developed serious health complications after giving birth. Her grandfather brought her to us, and she is now healthy and doing well.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 22 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Bamka Absolom, 6.png" alt="Bamka Absolom" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>BA</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Bamka Absolom</h3>
+          <div class="age">Age 6</div>
+          <p>Bamka was brought in by his stepfather in very poor condition. His mother died from cancer and circumstances at home were difficult.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 23 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Shananzy Nafula, 4.jpeg" alt="Shananzy Nafula" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>SN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Shananzy Nafula</h3>
+          <div class="age">Age 4</div>
+          <p>We took in Shananzy after discovering she was being neglected. She is very creative and loves to draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 24 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Blessing Stephen, 5.png" alt="Blessing Stephen" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>BS</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Blessing Stephen</h3>
+          <div class="age">Age 5</div>
+          <p>Blessing was staying with his father and stepmother. His father brought him to us after concerns that his stepmother was mistreating him.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 25 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/bolt kasiti, 13.jpeg" alt="Bolt Kasiti" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>BK</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Bolt Kasiti</h3>
+          <div class="age">Age 13</div>
+          <p>Bolt enrolled back in 2014. He loves mathematics and aspires to teach one day.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 26 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Cynthia Momanyi, 14.png" alt="Cynthia Momanyi" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>CM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Cynthia Momanyi</h3>
+          <div class="age">Age 14</div>
+          <p>Cynthia enrolled in 2016. She was living in Mukuru with an epileptic mother. After her father passed away, her mother couldn't care for her.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 27 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/dennis mutuku, 9.jpeg" alt="Dennis Mutuku" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Dennis Mutuku</h3>
+          <div class="age">Age 9</div>
+          <p>Dennis' parents died of HIV. With no one to care for him, he was brought to us by a neighbor. He loves magic and aspires to become a magician.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 28 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/diana obiero, 12.jpeg" alt="Diana Obiero" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DO</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Diana Obiero</h3>
+          <div class="age">Age 12</div>
+          <p>Diana enrolled when she was five. Both her parents were struggling with disabilities and could no longer care for her.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 29 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Diana Simiyu, 12.png" alt="Diana Simiyu" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DS</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Diana Simiyu</h3>
+          <div class="age">Age 12</div>
+          <p>Diana was left in misery after her parents tragically died from food poisoning. Seeking help, her neighbors brought her to us.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 30 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Emmanuel Luchivya, 13.png" alt="Emmanuel Luchivya" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>EL</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Emmanuel Luchivya</h3>
+          <div class="age">Age 13</div>
+          <p>Emmanuel was enrolled at the age of five. He is a determined student working toward a brighter future.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 31 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Favor Joy, 5.png" alt="Favor Joy" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>FJ</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Favor Joy</h3>
+          <div class="age">Age 5</div>
+          <p>Favor was dumped near the school when she was 2. She was found crying and looked lost with no place to go.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 32 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Glen Harrison, 13.png" alt="Glen Harrison" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>GH</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Glen Harrison</h3>
+          <div class="age">Age 13</div>
+          <p>Glen was staying with his diabetic mother who had blood pressure issues. She was struggling to care for him and asked us to help.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 33 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Goodluck Musela, 7.jpeg" alt="Goodluck Musela" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>GM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Goodluck Musela</h3>
+          <div class="age">Age 7</div>
+          <p>Goodluck was found by a stranger on the streets of Mukuru. He is a very bright young boy who loves to draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 34 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Hellen Koli, 10.png" alt="Hellen Koli" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>HK</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Hellen Koli</h3>
+          <div class="age">Age 10</div>
+          <p>Hellen's father died in a road accident and her mother had blood pressure health issues. She did not have sufficient income to care for her.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 35 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/hosea braving ndagwa, 11.jpeg" alt="Hosea Bravine Ndakwa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>HN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Hosea Bravine Ndakwa</h3>
+          <div class="age">Age 11</div>
+          <p>Hosea was brought to our school by his aunt. He is passionate about God and wants to become a preacher. He also enjoys soccer.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 36 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Joy Ayuma, 4.png" alt="Joy Ayuma" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>JA</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Joy Ayuma</h3>
+          <div class="age">Age 4</div>
+          <p>Joy's parents passed away due to COVID-19. She had nowhere to go. Luckily her neighbors brought her to us.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 37 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/kendrick wadabwa, 4.jpeg" alt="Kendrick Wandabwa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>KW</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Kendrick Wandabwa</h3>
+          <div class="age">Age 4</div>
+          <p>Kendrick was found abandoned on the streets of Mukuru. He is a bright young boy who loves to draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 38 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/maximilla chepyagon, 5.jpeg" alt="Maximilla Chepyagon" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>MC</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Maximilla Chepyagon</h3>
+          <div class="age">Age 5</div>
+          <p>Maximilla was living in the streets of Njenga. She is very artistic and loves to draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 39 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/michelle auma, 9.jpeg" alt="Mitchell Auma" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>MA</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Mitchell Auma</h3>
+          <div class="age">Age 9</div>
+          <p>Mitchell became a victim of political mayhem that claimed many lives, including her parents. She aspires to become a teacher.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 40 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/morgan okello, 12.jpeg" alt="Morgan Okello" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>MO</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Morgan Okello</h3>
+          <div class="age">Age 12</div>
+          <p>Morgan was taken in shortly after his parents died in a tragic road accident. He loves science and wants to become an engineer.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 41 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Pellar Omwoyo, 6.png" alt="Pellar Omwoyo" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>PO</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Pellar Omwoyo</h3>
+          <div class="age">Age 6</div>
+          <p>Pellar was found in a locked up house with no one to take care of her. They had to break into the house to rescue her.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 42 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Shadrack Omukuba, 14.png" alt="Shadrack Omukuba" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>SO</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Shadrack Omukuba</h3>
+          <div class="age">Age 14</div>
+          <p>Shadrack went through many unfortunate circumstances. Due to poor conditions and lack of proper care, a neighbor brought him to us.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 43 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/sheila kwamboka, 8.jpeg" alt="Sheila Kwamboka" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>SK</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Sheila Kwamboka</h3>
+          <div class="age">Age 8</div>
+          <p>Sheila was picked up from the streets of Kwanjenga. Her parents died from asthma. She wants to become a doctor.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 44 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Timothy Wafula, 10.png" alt="Timothy Wafula" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>TW</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Timothy Wafula</h3>
+          <div class="age">Age 10</div>
+          <p>Timothy was found on the streets of Reuben by a samaritan who was unable to find his parents.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 45 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Victoria Kioko, 15.png" alt="Victoria Kioko" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>VK</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Victoria Kioko</h3>
+          <div class="age">Age 15</div>
+          <p>Victoria was rescued by a passerby from boys who were seeking to harm her. Since she had nowhere to go, she was brought to us.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 46 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Miriam Lynne Namaemba, 10.jpeg" alt="Miriam Lynne Namaemba" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>ML</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Miriam Lynne Namaemba</h3>
+          <div class="age">Age 10</div>
+          <p>Miriam was found abandoned on the streets of Mukuru. She wants to become a doctor and loves science and English.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 47 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Sherill Miheso, 4.jpeg" alt="Sherill Miheso" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>SM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Sherill Miheso</h3>
+          <div class="age">Age 4</div>
+          <p>Sherill was found abandoned at a very young age. She is a bright, beautiful young girl who loves to color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 48 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/esther moraa, 11.jpeg" alt="Esther Moraa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>EM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Esther Moraa</h3>
+          <div class="age">Age 11</div>
+          <p>Esther is very free-spirited. She aspires to become a model and wants to travel the world.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 49 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/faith nanjama, 13.jpeg" alt="Faith Nanjama" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>FN</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Faith Nanjama</h3>
+          <div class="age">Age 13</div>
+          <p>Faith is a brilliant young lady who wants to become a civil engineer and travel the world. She loves arithmetic, reading and writing.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 50 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/mumo musyoka, 11.jpeg" alt="Mumo Musyoka" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>MM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Mumo Musyoka</h3>
+          <div class="age">Age 11</div>
+          <p>Mumo is very gifted in mathematics and science and wants to become an engineer. She also loves soccer and watching movies.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 51 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/emmanuel mtinda,10.jpeg" alt="Emmanuel Mtinda" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>EM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Emmanuel Mtinda</h3>
+          <div class="age">Age 10</div>
+          <p>Emmanuel is a very energetic young boy who loves to dance, draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 52 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/rachel mutheu, 13.jpeg" alt="Rachel Mutheu" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>RM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Rachel Mutheu</h3>
+          <div class="age">Age 13</div>
+          <p>Rachel is a very creative young lady who loves arts & crafts and dancing. She aspires to become an actress.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 53 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Kelvin Wanjala, 12.jpeg" alt="Kelvin Wanjala" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>KW</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Kelvin Wanjala</h3>
+          <div class="age">Age 12</div>
+          <p>Kelvin is a very smart boy who wants to become a neurosurgeon. He loves science and watching movies.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 54 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/dolphin kwamboka,13.jpeg" alt="Dolphin Kwamboka" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>DK</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Dolphin Kwamboka</h3>
+          <div class="age">Age 13</div>
+          <p>Dolphin wants to become a journalist. Her favorite subjects are English and math and she loves to sing and dance.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 55 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/bella moraa, 4.jpeg" alt="Angel Moraa" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>AM</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Angel Moraa</h3>
+          <div class="age">Age 4</div>
+          <p>We found Bella (Angel) when she was very young. She is a beautiful bright young girl who loves to draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 56 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/Baraka Bisau, 6.jpeg" alt="Baraka Bisau" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>BB</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Baraka Bisau</h3>
+          <div class="age">Age 6</div>
+          <p>We have been caring for Baraka ever since he lost his parents due to a political conflict in Kenya. He loves to draw and color.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+      <!-- 57 -->
+      <div class="student-card">
+        <div class="img-wrap">
+          <img src="images/Student Profiles/mercy wairimu, 10.jpeg" alt="Mecy Wairimu" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'img-fallback\'>MW</div>'">
+        </div>
+        <div class="card-body">
+          <h3>Mecy Wairimu</h3>
+          <div class="age">Age 10</div>
+          <p>Mecy is an adorable young girl who loves to read and write.</p>
+          <div class="sponsor-badge">Available for Sponsorship</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Sponsor a Child Today</h2>
+      <p>Your sponsorship provides education, daily meals, healthcare, and hope to a child in need. Every child deserves a chance to fulfill their potential.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="donate.html" class="btn btn-primary btn-lg">Sponsor a Child</a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">PRH</span>
+            Project Restore Hope
+          </div>
+          <p>Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2006.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schools.html">Glorious Schools</a></li>
+            <li><a href="transformation.html">Transformation</a></li>
+            <li><a href="impact.html">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Media</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="students.html">Student Profiles</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="mukuru.html">Mukuru</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="partners.html">Partners & Sponsors</a></li>
+            <li><a href="transparency.html">Financial Transparency</a></li>
+            <li><a href="reports.html">Annual Reports</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Project Restore Hope (PRH). All rights reserved.</span>
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" class="social-link" aria-label="Facebook" target="_blank" rel="noopener" title="Follow us on Facebook"><img src="images/facebook logo icon.jpg" alt="Facebook" loading="lazy"></a>
+          <a href="https://instagram.com/yourpage" class="social-link" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram"><img src="images/instagram icon.jpg" alt="Instagram" loading="lazy"></a>
+          <a href="https://youtube.com/@yourchannel" class="social-link" aria-label="YouTube" target="_blank" rel="noopener" title="Subscribe to our YouTube channel"><img src="images/youtube logo.png" alt="YouTube" loading="lazy"></a>
+          <a href="https://x.com/yourpage" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener" title="Follow us on X"><img src="images/twitter icon.png" alt="X (Twitter)" loading="lazy"></a>
+          <a href="https://linkedin.com/company/yourpage" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" title="Follow us on LinkedIn"><img src="images/linkedin icon.png" alt="LinkedIn" loading="lazy"></a>
+          <a href="https://tiktok.com/@yourpage" class="social-link" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok"><img src="images/tiktok icon.jpg" alt="TikTok" loading="lazy"></a>
+          <a href="https://wa.me/254700000000" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener" title="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt="WhatsApp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-donate-btn">
+    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+  </div>
+
+  <script src="js/config.js"></script><script src="js/script.js"></script>
+</body>
+</html>

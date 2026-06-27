@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer - Project Restore Hope</title>
+  <meta name="description" content="Volunteer with Project Restore Hope and make a difference in Mukuru, Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Volunteer - Project Restore Hope">
+  <meta property="og:description" content="Volunteer with Project Restore Hope and make a difference in Mukuru, Kenya.">
+  <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:url" content="https://projectrestorehope.com/volunteer.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Volunteer - Project Restore Hope">
+  <meta name="twitter:description" content="Volunteer with Project Restore Hope and make a difference in Mukuru, Kenya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">PRH</span>
+        <span>Project Restore Hope</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+            <nav class="nav" aria-label="Main navigation">
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">What We Do</a>
+        <a href="impact.html">Impact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="students.html">Students</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="nav-cta">Donate</a>
+      
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Volunteer With Us</h1>
+      <p>Join us in making a difference in the lives of children and families in Mukuru, Kenya.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Ways to Serve</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-img"><img src="images/volunteer.jpg" alt="Mission Trips"></div>
+          <div class="card-body">
+            <h3>Mission Trips</h3>
+            <p>Visit Mukuru and serve alongside our dedicated staff. Whether it's teaching, construction, or community outreach, your hands-on involvement makes a tangible difference in the lives of children and families.</p>
+            <a href="#apply" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="images/computer-class.jpg" alt="Skills-Based Volunteering"></div>
+          <div class="card-body">
+            <h3>Skills-Based Volunteering</h3>
+            <p>Share your professional expertise in education, technology, healthcare, or other fields. Your skills can help build capacity, train local staff, and create sustainable solutions for the community.</p>
+            <a href="#apply" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img"><img src="images/community-blessing.jpg" alt="Prayer and Advocacy"></div>
+          <div class="card-body">
+            <h3>Prayer & Advocacy</h3>
+            <p>Support our work from home through faithful prayer and raising awareness. Become an advocate for the children of Mukuru by sharing our story with your church, community, and social networks.</p>
+            <a href="#apply" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="section-title">How to Apply</h2>
+      <div class="split-layout">
+        <div class="split-content">
+          <ol class="steps-list">
+            <li>
+              <h3>1. Submit Interest</h3>
+              <p>Fill out the application form below with your details and area of interest. Our volunteer coordinator will review your submission.</p>
+            </li>
+            <li>
+              <h3>2. Interview</h3>
+              <p>We'll schedule a conversation to learn more about you, your skills, and how you can best contribute to our mission.</p>
+            </li>
+            <li>
+              <h3>3. Training</h3>
+              <p>Attend orientation and training sessions to prepare for your role, whether serving locally or traveling to Mukuru.</p>
+            </li>
+            <li>
+              <h3>4. Placement</h3>
+              <p>You'll be matched with a role that fits your gifts and availability, with ongoing support from our team.</p>
+            </li>
+          </ol>
+        </div>
+        <div class="split-image">
+          <img src="images/modern-office.jpg" alt="Volunteer Application" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="apply">
+    <div class="container">
+      <div class="form-card">
+        <h2 class="section-title">Volunteer Application</h2>
+        <form action="http://localhost:5000/api/volunteer" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="interest">Area of Interest</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select an area...</option>
+              <option value="mission-trip">Mission Trip</option>
+              <option value="skills-based">Skills-Based</option>
+              <option value="prayer-advocacy">Prayer / Advocacy</option>
+              <option value="fundraising">Fundraising</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="availability">Availability</label>
+            <input type="text" id="availability" name="availability" placeholder="e.g. Weekends, Summer 2026, Flexible">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself, your skills, and why you'd like to volunteer..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Ready to Make a Difference?</h2>
+      <p>Your time and talents can transform lives. Join us in bringing hope to the children and families of Mukuru.</p>
+      <div class="cta-buttons">
+        <a href="donate.html" class="btn btn-primary btn-lg">Support Our Work</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-donate-btn">
+    <a href="donate.html" class="btn btn-primary">Donate Now</a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">PRH</span>
+            Project Restore Hope
+          </div>
+          <p>Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2007.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="schools.html">Glorious Schools</a></li>
+            <li><a href="transformation.html">Transformation</a></li>
+            <li><a href="impact.html">Impact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>More</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="students.html">Student Profiles</a></li>
+            <li><a href="healthcare.html">Healthcare</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="mukuru.html">Mukuru</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="partners.html">Partners & Sponsors</a></li>
+            <li><a href="transparency.html">Financial Transparency</a></li>
+            <li><a href="reports.html">Annual Reports</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Project Restore Hope (PRH). All rights reserved.</span>
+        <div class="social-links">
+          <a href="https://facebook.com/yourpage" class="social-link" aria-label="Facebook" target="_blank" rel="noopener" title="Follow us on Facebook"><img src="images/facebook logo icon.jpg" alt="Facebook" loading="lazy"></a>
+          <a href="https://instagram.com/yourpage" class="social-link" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram"><img src="images/instagram icon.jpg" alt="Instagram" loading="lazy"></a>
+          <a href="https://youtube.com/@yourchannel" class="social-link" aria-label="YouTube" target="_blank" rel="noopener" title="Subscribe to our YouTube channel"><img src="images/youtube logo.png" alt="YouTube" loading="lazy"></a>
+          <a href="https://x.com/yourpage" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener" title="Follow us on X"><img src="images/twitter icon.png" alt="X (Twitter)" loading="lazy"></a>
+          <a href="https://linkedin.com/company/yourpage" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener" title="Follow us on LinkedIn"><img src="images/linkedin icon.png" alt="LinkedIn" loading="lazy"></a>
+          <a href="https://tiktok.com/@yourpage" class="social-link" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok"><img src="images/tiktok icon.jpg" alt="TikTok" loading="lazy"></a>
+          <a href="https://wa.me/254700000000" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener" title="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt="WhatsApp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/media-catalog.js"></script>
+  <script src="js/config.js"></script><script src="js/script.js"></script>
+</body>
+</html>
