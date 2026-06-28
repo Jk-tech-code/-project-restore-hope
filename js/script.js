@@ -567,7 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>`;
         } else {
           const safeAlt = alt.replace(/"/g, '&quot;');
-          const thumbName = 'images/thumbnails/' + item.name.replace(/[/\\]/g, '-').replace(/\.[^.]+$/, '.jpg');
+          const thumbName = 'images/thumbnails/' + item.name.replace(/[/\\]/g, '-').replace(/\.[^.]+$/, '.webp');
           html += `<div class="gallery-item" role="listitem" tabindex="0">
             <div class="gallery-img-wrapper">
               <img src="${thumbName}" alt="${safeAlt}" loading="lazy"
