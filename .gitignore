@@ -4,3 +4,21 @@ images/thumbnails/
 path-verification-report.json
 verify-paths.js
 rename-images.ps1
+
+# Environment files with credentials
+.env
+backend/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

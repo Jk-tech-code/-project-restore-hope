@@ -5,8 +5,10 @@ const dotenv = require('dotenv');
 const dns = require('dns');
 const { errorHandler } = require('./middleware/errorHandler');
 
-// Use Google DNS for reliable SRV resolution on Windows
-dns.setServers(['8.8.8.8', '8.8.4.4']);
+// Use Google DNS for reliable SRV resolution on Windows (development only)
+if (process.env.NODE_ENV !== 'production') {
+  dns.setServers(['8.8.8.8', '8.8.4.4']);
+}
 
 dotenv.config();
 
@@ -54,7 +56,7 @@ mongoose.connect(process.env.MONGO_URI)
     console.log('Connected to MongoDB Atlas');
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`);
-      console.log(`API available at http://localhost:${PORT}/api`);
+      console.log(`API available on port ${PORT}`);
     });
   })
   .catch((err) => {

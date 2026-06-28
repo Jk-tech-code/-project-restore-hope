@@ -1,14 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ======== API URL CONFIGURATION ========
-  // Override hardcoded form actions with the configured API base URL
-  if (typeof API_BASE_URL !== 'undefined') {
-    document.querySelectorAll('form[action*="localhost:5000"]').forEach(form => {
-      const path = form.getAttribute('action').replace(/http:\/\/localhost:5000/, '');
-      form.setAttribute('action', API_BASE_URL + path);
-    });
-  }
-
   // ======== STICKY HEADER ========
   const header = document.querySelector('.header');
   function updateHeader() {
@@ -563,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (item.video) {
           html += `<div class="gallery-item video-item" data-video="${item.name}" role="listitem">
             <div class="gallery-img-wrapper">
-              <video preload="none" muted playsinline>
+              <video preload="none" playsinline>
                 <source src="images/${item.name}" type="video/mp4">
               </video>
               <div class="video-play-btn" aria-label="Play video" role="button" tabindex="0">
@@ -664,7 +655,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const lb = document.getElementById('lightbox');
     const lbImg = document.getElementById('lightbox-img');
     if (lb && lbImg) {
-      window._lastFocused = document.activeElement;
+      lastFocusedElement = document.activeElement;
       lbImg.src = src;
       lb.classList.add('open');
       lb.setAttribute('aria-hidden', 'false');
@@ -673,7 +664,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Expose for backward compatibility with inline onclick
   window.openLightbox = openLightboxFromSrc;
 
   // ======== VIDEO GALLERY (DEDUPLICATED) ========
