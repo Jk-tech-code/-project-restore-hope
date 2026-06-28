@@ -3,20 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate - Project Restore Hope</title>
-  <meta name="description" content="Support Project Restore Hope's mission to provide education, meals, and hope to children in Mukuru, Kenya.">
+  <title>Donate - Project Restore Hope | Support Education in Mukuru, Kenya</title>
+  <meta name="description" content="Support Project Restore Hopes mission to provide education, meals, and hope to 800+ children at Glorious Group of Schools in Mukuru, Kenya. Donate today.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Donate - Project Restore Hope">
+  <meta property="og:title" content="Donate - Project Restore Hope | Support Education in Mukuru, Kenya">
   <meta property="og:description" content="Support Project Restore Hope's mission to provide education, meals, and hope to children in Mukuru, Kenya.">
   <meta property="og:image" content="https://projectrestorehope.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://projectrestorehope.com/donate.html">
+  <meta property="og:site_name" content="Project Restore Hope">
+  <link rel="canonical" href="https://projectrestorehope.com/donate.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Donate - Project Restore Hope">
+  <meta name="twitter:title" content="Donate - Project Restore Hope | Support Education in Mukuru, Kenya">
   <meta name="twitter:description" content="Support Project Restore Hope's mission to provide education, meals, and hope to children in Mukuru, Kenya.">
+  <meta name="twitter:image" content="https://projectrestorehope.com/images/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/x-icon" href="images/PRH_favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/PRH_favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/PRH_favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="images/PRH_favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/PRH_favicon/favicon-256x256.png">
+<link rel="manifest" href="images/PRH_favicon/site.webmanifest">
+<meta name="theme-color" content="#1E4D8C">
+  <meta name="keywords" content="donate to Project Restore Hope, Mukuru Kenya charity, education charity Kenya, school feeding program donation">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://projectrestorehope.com/"},{"@type":"ListItem","position":2,"name":"Donate - Project Restore Hope | Support Education in Mukuru, Kenya","item":"https://projectrestorehope.com/donate.html"}]
+  }
+  </script>
+  <style>
+    .skip-link { position:absolute;top:-100px;left:0;z-index:10000;padding:8px 16px;background:#1E4D8C;color:#fff;text-decoration:none;font-weight:600;border-radius:0 0 4px 0;transition:top 0.2s; }
+    .skip-link:focus { top:0; }
+  </style>
 </head>
 <body>
 
@@ -45,7 +69,7 @@
     </div>
   </header>
 
-  <section class="page-hero">
+  <a href="#main-content" class="skip-link">Skip to main content</a><main id="main-content"><section class="page-hero">
     <div class="container">
       <h1>Help Us Empower the Future of Our Children</h1>
       <p>Your generosity brings education, daily meals, and hope to the children of Mukuru, Kenya.</p>
@@ -57,68 +81,92 @@
       <div class="split-layout">
         <div>
           <div class="form-card">
-            <h2 style="font-size:1.6rem;color:var(--primary-dark);margin-bottom:24px;">Make a Donation</h2>
+            <p class="form-heading">Step 1: Choose Your Gift</p>
+            <h2 style="font-size:1.6rem;color:var(--primary-dark);margin-bottom:6px;">Make a Donation</h2>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:20px;">Select an amount or enter a custom gift</p>
             <form action="/api/donate/create-payment-intent" method="POST" id="donation-form">
               <div class="donation-amounts">
-                <div class="donation-amount" data-amount="10">$10</div>
-                <div class="donation-amount" data-amount="25">$25</div>
-                <div class="donation-amount" data-amount="50">$50</div>
-                <div class="donation-amount" data-amount="100">$100</div>
-                <div class="donation-amount" data-amount="500">$500</div>
-                <div class="donation-amount custom" data-amount="custom">Custom</div>
+                <div class="donation-amount" data-amount="10"><span class="amount-value">$10</span><span class="amount-impact">Provides 20 meals</span></div>
+                <div class="donation-amount" data-amount="25"><span class="amount-value">$25</span><span class="amount-impact">School supplies for 5 kids</span></div>
+                <div class="donation-amount" data-amount="50"><span class="amount-value">$50</span><span class="amount-impact">One child's monthly meals</span></div>
+                <div class="donation-amount" data-amount="100"><span class="amount-value">$100</span><span class="amount-impact">Uniforms for 8 students</span></div>
+                <div class="donation-amount" data-amount="500"><span class="amount-value">$500</span><span class="amount-impact">Sponsor a child for a term</span></div>
+                <div class="donation-amount custom" data-amount="custom"><span class="amount-value">Custom</span><span class="amount-impact">Choose your own amount</span></div>
               </div>
-              <div id="custom-amount-container" style="display:none;margin-bottom:16px;">
-                <input type="number" name="custom_amount" id="custom-amount" placeholder="Enter amount $" min="1" step="0.01" style="width:100%;padding:12px;border:2px solid var(--border);border-radius:var(--radius);font-size:1.1rem;">
+              <div id="custom-amount-container" style="display:none;">
+                <input type="number" name="custom_amount" id="custom-amount" placeholder="Enter amount $" min="1" step="0.01">
               </div>
               <input type="hidden" name="amount" id="donation-amount" value="">
-              <div style="margin-bottom:20px;">
-                <div style="display:flex;gap:8px;margin-bottom:16px;">
-                  <span class="frequency-option active" data-frequency="one-time" style="padding:8px 16px;border:2px solid var(--secondary);border-radius:var(--radius);font-weight:700;background:var(--secondary);color:var(--primary-dark);cursor:pointer;">One-Time</span>
-                  <span class="frequency-option" data-frequency="monthly" style="padding:8px 16px;border:2px solid var(--border);border-radius:var(--radius);font-weight:600;color:var(--text-light);cursor:pointer;">Monthly</span>
-                </div>
-                <input type="hidden" name="frequency" id="donation-frequency" value="one-time">
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width:75%;" data-width="75%"></div>
-                </div>
-                <p style="font-size:0.85rem;color:var(--text-muted);">$42,500 raised of $60,000 goal for new building</p>
+              <p class="form-heading" style="margin-top:4px;">Step 2: Choose Frequency</p>
+              <div class="frequency-toggle">
+                <span class="frequency-option active" data-frequency="one-time" style="padding:8px 16px;border:2px solid var(--secondary);border-radius:var(--radius);font-weight:700;background:var(--secondary);color:var(--primary-dark);cursor:pointer;">One-Time</span>
+                <span class="frequency-option" data-frequency="monthly" style="padding:8px 16px;border:2px solid var(--border);border-radius:var(--radius);font-weight:600;color:var(--text-light);cursor:pointer;">Monthly</span>
+              </div>
+              <input type="hidden" name="frequency" id="donation-frequency" value="one-time">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width:75%;" data-width="75%"></div>
+              </div>
+              <div class="progress-goal">
+                <span class="raised">$42,500 raised</span>
+                <span class="goal">$60,000 goal</span>
+              </div>
+              <p class="form-heading" style="margin-top:4px;">Step 3: Your Information</p>
+              <div class="form-group">
+                <label for="donor-name">Full Name</label>
+                <input type="text" name="name" id="donor-name" placeholder="Your full name" required>
+                <span class="form-feedback"></span>
               </div>
               <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" name="name" placeholder="Your full name" required>
+                <label for="donor-email">Email Address</label>
+                <input type="email" name="email" id="donor-email" placeholder="Your email address" required>
+                <span class="form-feedback"></span>
               </div>
               <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" name="email" placeholder="Your email address" required>
+                <label for="donor-note">Message (Optional)</label>
+                <textarea name="note" id="donor-note" placeholder="Share a note with your donation..."></textarea>
               </div>
-              <div class="form-group">
-                <label>Message (Optional)</label>
-                <textarea name="note" placeholder="Share a note with your donation..."></textarea>
+              <button type="submit" class="btn btn-primary btn-lg btn-donate">Donate Now <span style="font-size:1.1rem;">&rarr;</span></button>
+              <div class="payment-badges">
+                <span class="trust-badge">
+                  <span class="badge-icon">&#128274;</span>
+                  Secure SSL Encrypted
+                </span>
+                <span class="trust-badge">
+                  <span class="badge-icon">&#9733;</span>
+                  Verified Nonprofit
+                </span>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Donate Now</button>
+              <p class="donor-proof"><strong>Join 2,400+ supporters</strong> who have already made a difference</p>
             </form>
           </div>
         </div>
-        <div>
+        <div class="donate-sidebar">
+          <p class="sidebar-header">Your Impact at a Glance</p>
           <div class="alert alert-success"><strong>Education & Daily Meals:</strong> Your support provides two meals a day and quality education for children in Mukuru.</div>
           <div class="alert alert-info"><strong>Building Fund:</strong> Help us replace the current dilapidated building with a safe, modern four-story facility.</div>
           <div class="alert alert-warning"><strong>Tax-Deductible:</strong> Project Restore Hope provides donation receipts for all contributions.</div>
 
           <div class="form-card" style="margin-top:24px;">
-            <h3 style="color:var(--primary-dark);margin-bottom:16px;">Your Support Helps Provide</h3>
-            <ul style="color:var(--text-light);line-height:2.2;list-style:disc;padding-left:20px;">
-              <li>Education for 800+ students</li>
-              <li>Two daily meals for students and staff</li>
-              <li>School supplies and uniforms</li>
-              <li>Teacher salaries and support</li>
-              <li>Building improvements and maintenance</li>
-              <li>Technology and computer training</li>
-              <li>Future development projects</li>
+            <h3 style="color:var(--primary-dark);margin-bottom:16px;font-size:1.1rem;">Your Support Helps Provide</h3>
+            <ul class="support-grid">
+              <li class="support-item"><span class="support-icon">&#127891;</span> Education for 800+ students</li>
+              <li class="support-item"><span class="support-icon">&#127858;</span> Two daily meals for students and staff</li>
+              <li class="support-item"><span class="support-icon">&#127890;</span> School supplies and uniforms</li>
+              <li class="support-item"><span class="support-icon">&#128218;</span> Teacher salaries and support</li>
+              <li class="support-item"><span class="support-icon">&#127963;</span> Building improvements and maintenance</li>
+              <li class="support-item"><span class="support-icon">&#128187;</span> Technology and computer training</li>
+              <li class="support-item"><span class="support-icon">&#128640;</span> Future development projects</li>
             </ul>
           </div>
 
           <div class="form-card" style="margin-top:24px;">
-            <h3 style="color:var(--primary-dark);margin-bottom:8px;">Bank Transfer</h3>
-            <p style="color:var(--text-light);font-size:0.9rem;">Email us at <strong>info@projectrestorehope.com</strong> for direct bank transfer details.</p>
+            <div class="bank-info">
+              <div class="bank-icon">&#127974;</div>
+              <div>
+                <h3 style="color:var(--primary-dark);margin-bottom:4px;">Bank Transfer</h3>
+                <p style="color:var(--text-light);font-size:0.85rem;">Email us at <strong>info@projectrestorehope.com</strong> for direct bank transfer details.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +209,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  </main><footer class="footer">
     <div class="container">
       <div class="footer-cta fade-up">
         <h3>Transform a Life Today</h3>
@@ -240,7 +288,7 @@
     <a href="donate.html" class="btn btn-primary">Donate Now</a>
   </div>
 
-  <script src="js/media-catalog.js"></script>
-  <script src="js/config.js"></script><script src="js/script.js"></script>
+  <script src="js/media-catalog.js" defer></script>
+  <script src="js/config.js" defer></script><script src="js/script.js" defer></script>
 </body>
 </html>

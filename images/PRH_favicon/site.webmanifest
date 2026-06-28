@@ -1,0 +1,14 @@
+{
+  "name": "Project Restore Hope",
+  "short_name": "PRH",
+  "description": "Restoring hope, transforming lives in Mukuru, Kenya",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FAFAF7",
+  "theme_color": "#1E4D8C",
+  "icons": [
+    { "src": "favicon-128x128.png", "sizes": "128x128", "type": "image/png" },
+    { "src": "favicon-256x256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
