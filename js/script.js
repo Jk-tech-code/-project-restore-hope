@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const BASE_URL = (typeof API_BASE_URL !== 'undefined') ? API_BASE_URL : '';
 
   // ======== STICKY HEADER ========
   const header = document.querySelector('.header');
@@ -245,6 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = e.target;
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+    const endpoint_url = endpoint.startsWith('/api') ? `${BASE_URL}${endpoint}` : endpoint;
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
 
@@ -252,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.textContent = 'Sending...';
 
     try {
-      const response = await fetch(endpoint, {
+      const response = await fetch(endpoint_url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -325,12 +327,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const finalAmount = data.amount || data.custom_amount;
+      const donationEndpoint = donationForm.action.startsWith('/api') ? `${BASE_URL}${donationForm.action}` : donationForm.action;
 
       submitBtn.disabled = true;
       submitBtn.textContent = 'Processing...';
 
       try {
-        const response = await fetch(donationForm.action, {
+        const response = await fetch(donationEndpoint, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

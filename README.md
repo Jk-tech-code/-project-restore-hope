@@ -2,6 +2,10 @@
 
 > Restoring hope, transforming lives, and building futures for children and families in Mukuru, Kenya through education, daily nutrition, and community development since 2006.
 
+[![Website](https://img.shields.io/badge/website-projectrestorehope.com-blue)](https://projectrestorehope.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/hosted-GitHub%20Pages-brightgreen)](https://jk-tech-code.github.io/-project-restore-hope/)
+
 ## Overview
 
 Project Restore Hope is a nonprofit organization providing education, daily meals, and support to 800+ children at Glorious Group of Schools in Mukuru, Nairobi, Kenya. Founded by Dr. Mitchelle Scott after a medical mission in 2006, the organization operates a full primary and secondary school, feeding program, orphan support, and community development initiatives.
@@ -16,7 +20,7 @@ This repository contains the official public website for Project Restore Hope.
 - **Student sponsorship profiles** — 57 orphan and vulnerable children profiles
 - **Donation system** — Stripe payment intent integration
 - **Contact & volunteer forms** — Backend API with email notifications
-- **Newsletter subscription** — Mailchimp-style email collection
+- **Newsletter subscription** — Email collection with backend integration
 - **Interactive timeline** — Organization transformation history
 - **SEO optimized** — Full Open Graph, Twitter Cards, JSON-LD structured data, sitemap
 - **Accessibility friendly** — Skip navigation, ARIA labels, semantic HTML, keyboard navigation
@@ -33,7 +37,6 @@ This repository contains the official public website for Project Restore Hope.
 | MongoDB / Mongoose | Database |
 | Stripe API | Payment processing |
 | Nodemailer | Email notifications |
-| Sharp | Image processing |
 
 ## File Structure
 
@@ -60,12 +63,14 @@ project-restore-hope/
 ├── faq.html                # Frequently Asked Questions
 ├── reports.html            # Annual Reports
 ├── css/
-│   └── styles.css          # Single stylesheet (3,700+ lines)
+│   └── styles.css          # Single stylesheet
 ├── js/
 │   ├── config.js           # API base URL configuration
 │   ├── script.js           # All JavaScript logic
-│   └── media-catalog.js    # Media catalog (1,000+ entries)
+│   └── media-catalog.js    # Media catalog
 ├── images/                 # All site images
+├── assets/
+│   └── reports/            # Annual report PDFs (2019-2025)
 ├── backend/                # Express API server
 │   ├── server.js           # Server entry point
 │   ├── .env.example        # Environment variables template
@@ -77,6 +82,10 @@ project-restore-hope/
 │   └── utils/              # Email utility
 ├── robots.txt
 ├── sitemap.xml
+├── .gitignore
+├── LICENSE
+├── SECURITY.md
+├── CONTRIBUTING.md
 └── README.md
 ```
 
@@ -84,7 +93,7 @@ project-restore-hope/
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - MongoDB (local or Atlas)
 - Stripe account (test mode)
 
@@ -132,32 +141,31 @@ FRONTEND_URL=http://localhost:5500
 3. Source: Deploy from branch, main, / (root)
 4. The site will be available at `https://jk-tech-code.github.io/-project-restore-hope/`
 
-**Note:** The backend API must be hosted separately (see below).
+**Note:** The backend API must be hosted separately.
 
 ### Netlify (Frontend Only)
 
 1. Connect your GitHub repository
-2. Build command: (none — static site)
-3. Publish directory: `/`
-4. Environment variables (for any Netlify Functions): none required
+2. Publish directory: `/`
+3. No build command required (static site)
 
 ### Vercel (Frontend Only)
 
 1. Import your GitHub repository
 2. Framework preset: Other
 3. Root directory: `.`
-4. Build command: (none)
+4. Build command: none
 5. Output directory: `.`
 
 ### Backend Hosting Options
 
 The Express API can be deployed to:
-- **Render** — `render.com` (free tier available)
-- **Railway** — `railway.app`
-- **Fly.io** — `fly.io`
+- **Render** — render.com (free tier available)
+- **Railway** — railway.app
+- **Fly.io** — fly.io
 - **DigitalOcean App Platform**
 
-### Full-Stack Deployment (Vercel + MongoDB Atlas)
+### Full-Stack Deployment
 
 1. Deploy backend to Render or Railway
 2. Update `js/config.js` with the deployed API URL

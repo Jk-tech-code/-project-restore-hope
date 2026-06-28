@@ -6,6 +6,23 @@
   box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 10000;
+  padding: 8px 16px;
+  background: #1E4D8C;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 :root {
   --primary: #1E4D8C;
   --primary-dark: #0F2D55;
@@ -143,9 +160,6 @@ ul { list-style: none; }
   gap: 2px;
 }
 
-.header .nav {
-  gap: 0;
-}
 
 .header .nav a {
   padding: 8px 11px;
@@ -163,14 +177,6 @@ ul { list-style: none; }
   color: var(--text);
 }
 
-.header .nav .nav-cta {
-  padding: 10px 22px;
-  margin-left: 4px;
-}
-
-.header.scrolled .nav a {
-  color: var(--text);
-}
 
 .header .nav a:hover,
 .header .nav a.active {
@@ -1357,11 +1363,6 @@ section:not(.hero):not(.page-hero):not(.page-intro):not(.stats-grid):not(.cta-se
 }
 
 /* ============ PARTNER LOGOS ============ */
-.partner-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
 
 .partner-logo {
   background: var(--bg-white);
